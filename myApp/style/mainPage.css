@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+.MainPage {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 850px) {
+  .MainContent {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .HeroSection,
+  .AboutMeSection {
+    margin: 20px;
+    flex: 1;
+  }
+
+  .HeroSection {
+    margin-right: 40px;
+  }
+  .MainPage{
+      margin-top: 70px;  
+  }
+}
+
+@media (max-width: 849px) {
+  .MainContent {
+    margin: 0;
+    margin-top: 80px;
+    flex-direction: column;
+    padding: 0;
+  }
+
+}
+
+.HeroSection {
+  /* Hero section styles (if not already implemented) */
+  text-align: center;
+}
+
+.AboutMeSection {
+  background-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+}

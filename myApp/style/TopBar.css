@@ -1,0 +1,68 @@
+/* General styling for the header */
+
+.top-menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-on-surface);
+}
+
+.menu-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: 2.5rem; /* Increase icon size */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-item:hover {
+  transform: scale(1.2);
+  color: var(--color-secondary); /* Change color on hover */
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  color: var(--color-secondary);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .header {
+    font-size: 1rem;
+    text-transform: none;
+  }
+
+  .menu-icons {
+    gap: 15px;
+  }
+}

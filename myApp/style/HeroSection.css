@@ -1,0 +1,93 @@
+.ProfileBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary-container);
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+.ProfileImg {
+  border-radius: 50%;
+  width: 70%;
+  aspect-ratio: 0.75;
+  margin-top: 20px; ;
+}
+
+.ProfileTextBox {
+   display: flex;
+    flex-direction: column;
+    color: #102000;
+    font-size: 55px;
+    font-family: Bold;
+    text-align: center;
+    align-items: center;
+    margin-right:77px;
+    margin-left:77px;
+}
+
+.ProfileTextBox h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-on-primary-container);
+}
+
+.ProfileTextBox .BrakeLine {
+  width: 70px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ProfileTextBox .SubText {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+}
+
+
+.ProfileIcons {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 0; /* Stick to the bottom */
+  margin: 0;
+  padding: 10px 0;
+  background-color: var(--color-surface);
+}
+
+.ProfileIcons .IconItem {
+  display: inline-block;
+  color: var(--color-primary);
+  transition: transform 0.3s, color 0.3s;
+  font-size: 1.5rem;
+}
+
+.ProfileIcons .IconItem:hover {
+  transform: scale(1.2);
+  color: var(--color-on-primary-container);
+}
+
+
+@media (max-width: 768px) {
+  .ProfileBox {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .ProfileTextBox h1 {
+    font-size: 1.5rem;
+  }
+
+  .ProfileIcons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

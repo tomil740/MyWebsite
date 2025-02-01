@@ -1,0 +1,138 @@
+.AboutMeSection,
+.ExtraDescriptionSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.AboutMeTextBox,
+.ExtraDescriptionTextBox {
+  max-width: 800px;
+  width: 100%;
+  color: var(--color-on-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.Paragraph1 {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: var(--color-secondary);
+}
+
+.ActionButtonsRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ActionButton {
+  padding: 12px 30px;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  text-decoration: none;
+  font-size: 1.125rem;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.ActionButton:hover {
+  color: var(--color-primary-container);
+  background-color: var(--color-on-primary-container);
+}
+
+.subList {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.subList ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.subList li {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-on-background);
+}
+
+.WhatSetsMeApart h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.ReadyToCollaborate {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.ProjectBut {
+  padding: 12px 30px;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary-container);
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.ProjectBut:hover {
+  background-color: var(--color-primary-container);
+}
+
+@media (max-width: 768px) {
+  .Header {
+    font-size: 2.5rem;
+  }
+
+  .Paragraph1 {
+    font-size: 1.2rem;
+  }
+
+  .ReadyToCollaborate {
+    font-size: 1.125rem;
+  }
+
+  .ProjectBut {
+    font-size: 1.125rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header {
+    font-size: 2.2rem;
+  }
+
+  .Paragraph1 {
+    font-size: 1rem;
+  }
+
+  .ProjectBut {
+    font-size: 1.125rem;
+    padding: 8px 18px;
+  }
+}
