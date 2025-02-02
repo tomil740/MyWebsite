@@ -33,8 +33,8 @@ const ExtraDescription = () => {
             </li>
           </ul>
         </div>
-        <div className="ActionButtonsRow">
-          <a href="https://github.com/tomil740" className="ActionButton">
+        <div className="ActionButtonsRow"> 
+          <a href="#my-work-section" className="ActionButton">
             My Work
           </a>
           <a href="mailto:tomil@hotmail.co.il" className="ActionButton">

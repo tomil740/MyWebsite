@@ -43,7 +43,6 @@ const projectList = [
     isProduction: false,
     links: {
       github: "https://github.com/tomil740/SmartHome/tree/Version1",
-      liveDemo: "https://github.com/tomil740/SmartHome/tree/Version1",
       media: "https://github.com/tomil740/SmartHome/tree/Version1",
     },
   },
@@ -55,7 +54,7 @@ const projectList = [
       "https://private-user-images.githubusercontent.com/126959122/401215900-436b8dba-233c-4d95-bb86-0b923bae5c8c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg0ODk2NDcsIm5iZiI6MTczODQ4OTM0NywicGF0aCI6Ii8xMjY5NTkxMjIvNDAxMjE1OTAwLTQzNmI4ZGJhLTIzM2MtNGQ5NS1iYjg2LTBiOTIzYmFlNWM4Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIwMlQwOTQyMjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NWZkMTIyYmNhODM2NjUyZDAwOGIzZGQ0NzgzYjdlN2JjOWM3ZGVlYTM3MmU2MWFhMjk1MjlmODA0YzQ1OTk5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.po9L9F-m6XbuBdBCUreccJ5vmOzEfXqGJLSLR-GlIoM",
     platforms: ["web"],
     isProduction: false,
-    links: {
+    links: { 
       github: "https://github.com/tomil740/TeachHub",
       liveDemo: "https://appleseeds-teachhub-project.vercel.app/",
       media: "https://github.com/tomil740/TeachHub",

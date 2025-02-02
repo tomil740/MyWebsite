@@ -10,7 +10,7 @@ const ProjectsSection = ({ projects }) => {
     : projects;
 
   return (
-    <section className="MyWorkSection">
+    <section id="my-work-section" className="MyWorkSection">
       <h2 className="SectionTitle">My Work</h2>
 
       {/* Platform filter chips */}
