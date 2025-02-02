@@ -1,0 +1,258 @@
+/* Prevent any scrolling on the page */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Section style for MyWorkSection */
+.MyWorkSection {
+  padding: 50px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+/* Title style */
+.SectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  font-family: var(--font-primary);
+}
+
+/* Allow horizontal scrolling only in ProjectsContainer */
+.ProjectsContainer {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden; /* Ensure no vertical scroll */
+  scroll-behavior: smooth;
+  max-width: 100vw; /* Prevent overflow beyond viewport width */
+  box-sizing: border-box;
+  padding-bottom: 10px; /* Ensure space for scrollbar */
+}
+
+.ProjectsContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.ProjectsContainer::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 4px;
+}
+
+.ProjectsContainer::-webkit-scrollbar-track {
+  background-color: var(--color-surface);
+}
+
+
+/* Center content on larger screens */
+@media (min-width: 1200px) {
+
+    /* Allow horizontal scrolling only in ProjectsContainer */
+  .ProjectsContainer {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden; /* Ensure no vertical scroll */
+    scroll-behavior: smooth;
+    max-width: 100vw; /* Prevent overflow beyond viewport width */
+    width: 75vw;
+    box-sizing: border-box;
+    padding-bottom: 10px; /* Ensure space for scrollbar */
+  }
+}
+
+.PlatformFilters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.PlatformChip {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.PlatformChip.active {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-on-primary);
+}
+
+.PlatformChip:hover {
+  background-color: var(--color-primary-container);
+  border-color: var(--color-primary-container);
+}
+
+.PlatformHeader {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.PlatformSubheader {
+  font-size: 0.875rem;
+  color: var(--color-secondary);
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.PlatformChip.active 
+.PlatformSubheader{
+  color: var(--color-on-secondary);
+}
+.PlatformChip.active 
+.PlatformHeader{
+  color: var(--color-on-primary);
+}
+
+
+.ProjectsContainer {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ProjectItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px var(--color-shadow);
+  width: 100%;
+  min-width: 388px;
+  max-width: 650px;
+  transition: transform 0.3s;
+  margin: 20px;
+}
+
+.ProductionBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4caf50; /* Green background for "Production Ready" */
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 20px; /* Make it rounded */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.ProjectItem:hover {
+  transform: translateY(-5px);
+}
+
+.ProjectImageWrapper {
+  width: 100%;
+  height: 400px;
+  background-color: var(--color-surface-variant);
+  overflow: hidden;
+}
+
+.ProjectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProjectContent {
+  padding: 20px;
+  text-align: left;
+}
+
+.ProjectName {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ProjectDescription {
+  font-size: 1rem;
+  color: var(--color-on-surface);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.ProjectPlatforms {
+  margin-bottom: 15px;
+}
+
+.PlatformTag {
+  display: inline-block;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-right: 5px;
+}
+
+.ProductionBadge {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.ProjectActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.ActionButton {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.ActionButton:hover {
+  background-color: var(--color-primary-container);
+    color: var(--color-on-primary-container);
+
+}

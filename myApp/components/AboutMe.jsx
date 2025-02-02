@@ -18,7 +18,7 @@ const AboutMe = () => {
           create something amazing together!
         </p>
         <div className="ActionButtonsRow">
-          <a href="https://github.com/tomil740" className="ActionButton">
+          <a href="#my-work-section" className="ActionButton">
             My Work
           </a>
           <a href="#extra-description" className="ActionButton">
