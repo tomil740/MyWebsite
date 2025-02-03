@@ -15,8 +15,9 @@ const projectList = [
     platforms: ["android", "ios"],
     isProduction: true,
     links: {
-      github: "https://github.com/mobile-app",
-      media: "https://github.com/mobile-app",
+      github: "https://github.com/tomil740/DeliveryGuyAnalyzer-MVP-",
+      media:
+        "https://medium.com/@tomil0535264486/delivery-guy-analyzer-full-app-8cf9cdf482a2",
     },
   },
   {
